@@ -24,9 +24,11 @@ else new_cart_item = {
   :clearance => cart[counter][:clearance]
   :count => 1
 }
+new_cart << new_cart_item
 end
     counter += 1
   end
+  new_cart
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
